@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\News;
-use App\Http\Requests\StoreNewsRequest;
-use App\Http\Requests\UpdateNewsRequest;
+use App\Models\Company;
+use App\Http\Requests\StoreCompanyRequest;
+use App\Http\Requests\UpdateCompanyRequest;
 
-class NewsController extends Controller
+class CompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('');
+        //
     }
 
     /**
@@ -21,13 +21,13 @@ class NewsController extends Controller
      */
     public function create()
     {
-        return view('');
+        //
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreNewsRequest $request)
+    public function store(StoreCompanyRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class NewsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(News $news)
+    public function show(Company $company)
     {
         //
     }
@@ -43,7 +43,7 @@ class NewsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(News $news)
+    public function edit(Company $company)
     {
         //
     }
@@ -51,7 +51,7 @@ class NewsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateNewsRequest $request, News $news)
+    public function update(UpdateCompanyRequest $request, Company $company)
     {
         //
     }
@@ -59,7 +59,7 @@ class NewsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(News $news)
+    public function destroy(Company $company)
     {
         //
     }

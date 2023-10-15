@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\NewsImage;
+use App\Http\Requests\StoreNewsImageRequest;
+use App\Http\Requests\UpdateNewsImageRequest;
 
 class NewsImageController extends Controller
 {
@@ -25,7 +27,7 @@ class NewsImageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreNewsImageRequest $request)
     {
         //
     }
@@ -33,7 +35,7 @@ class NewsImageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(NewsImage $newsImage)
     {
         //
     }
@@ -41,7 +43,7 @@ class NewsImageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(NewsImage $newsImage)
     {
         //
     }
@@ -49,7 +51,7 @@ class NewsImageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateNewsImageRequest $request, NewsImage $newsImage)
     {
         //
     }
@@ -57,7 +59,7 @@ class NewsImageController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(NewsImage $newsImage)
     {
         //
     }
