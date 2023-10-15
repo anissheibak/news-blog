@@ -13,7 +13,7 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        //
+        return view('');
     }
 
     /**
@@ -21,7 +21,7 @@ class CompanyController extends Controller
      */
     public function create()
     {
-        //
+        return view('');
     }
 
     /**
